@@ -186,3 +186,51 @@ NaN -> false
 '  ' -> true
 */
 
+
+// Operadores Binarios
+
+res = a + b;
+res = a - b;
+res = a * b;
+res = a / b;
+res = a % b; // mod
+res = a ** b; // potencia
+
+
+
+// Funciones
+
+function sumar(a, b){
+    return a + b;
+}
+
+console.log(sumar(4, 5, 6));
+
+//HUF que dado un nombre y un apellido, salude a la persona;
+
+function saludar(nombre, apellido){
+    return `Hola ${nombre} ${apellido}`;
+}
+console.log(saludar('Roberto', 'Morales'));
+
+//HUF que dado un número lo eleve al cuadrado
+
+function elevar(numero){
+    return numero ** 2;
+}
+
+console.log(elevar(5));
+
+// HUF que tome el valor de un producto, le aplique el 20%
+// de descuento, imprima el valor del producto inicial,
+// el valor con descuento y el valor ahorrado
+
+function valor_descuento(valor_producto){
+    let descuento = valor_producto * 0.2;
+    let valor_final = valor_producto - descuento;
+    return ` Valor inicial: ${valor_producto} 
+    \n Valor descuento: ${descuento} 
+    \n Valor Final: ${valor_final}`;
+}
+
+console.log(valor_descuento(150000));
