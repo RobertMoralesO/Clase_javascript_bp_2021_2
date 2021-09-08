@@ -344,8 +344,104 @@ switch(a){
          console.log('Ninguna de las Anteriores');
 }
 
+// Funciones
+
+function saludar_tres(){
+    console.log('Hola Mundo');
+}
+
+saludar_tres();
+
+// Variable local
+
+function saludar_nombre(){
+    let nomb = "Roberto";
+    console.log(`Hola ${nomb}`);
+}
+//console.log(`Hola ${nomb}`);
+
+// Variable externa
+
+let nomb = "Roberto";
+function saludar_nombre(){
+    console.log(`Hola ${nomb}`);
+}
+console.log(`Hola ${nomb}`);
+
+// Parámetros de una función
+function mensaje_(de, texto){
+    console.log(`${de}: ${texto}`);
+}
+
+mensaje_('Roberto', 'Hola María')
+mensaje_('Roberto')
+mensaje_('María', 'Hola Roberto')
+
+// Parámetros predeterminados
+
+function mensaje_2(de, texto=''){
+    console.log(`${de}: ${texto}`);
+}
+
+mensaje_2('Roberto')
+mensaje_('María', 'Hola Roberto')
+
+// Retorno en javascript
+
+function sumar_dos(a, b){
+    return a + b;
+}
 
 
+
+// HUF que devuelva la sumatoria de los números pares del 1 al x
+
+function sumatoria_pares(x){
+    let suma = 0;
+    for(i = 1; i <=x; i++){
+        if(!(i%2)) suma = suma + i;
+    }
+    return suma;
+}
+
+console.log(sumatoria_pares(10));
+
+
+// Expresión y Declaración de una función
+
+// Declarar una función
+function hola_(){
+    return 'Hola mundo';
+}
+
+console.log(hola_());
+console.log(hola_);
+let aux = hola_;
+console.log(aux);
+console.log(aux());
+
+// Expresión de una función
+
+let hola_dos = function(){
+    return 'Hola Mundo dos';
+}
+
+console.log(hola_dos);
+console.log(hola_dos());
+
+// Functiones flecha
+
+let hola_tres = function(){
+    console.log('Hola MUndo tres');
+}
+
+let hola_tres_retorno = function(){
+    return 'Hola Mundo tres';
+}
+
+hola_tres_retorno = ()=> {
+    return ('Hola Mundo tres');
+}
 
 
 
