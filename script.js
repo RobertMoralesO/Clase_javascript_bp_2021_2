@@ -234,3 +234,68 @@ function valor_descuento(valor_producto){
 }
 
 console.log(valor_descuento(150000));
+
+
+// COMPARACIONES
+
+// Al comparar valores de diferentes tipos, JS primero convierte los valores a números
+// Toda comparación con NaN es false.
+// el undefined y el null SON IGUALES entre sí pero no a ningún valor
+
+/*
+TABLA CONVERSIÓN NÚMEROS
+undefined -> NaN
+null -> 0
+true -> 1
+false -> 0
+string '' -> 0
+string 'hola' -> NaN
+*/
+
+
+
+console.log(2 > true); //true
+console.log(2 < true); //false
+console.log('2' > 1); // true
+console.log('casa' > 0); // false
+console.log('casa' < 0); // false
+console.log('casa' == 0); // false
+console.log(null > 0); // false
+console.log(null < 0); // false
+console.log(null == 0); // false
+console.log(null >= 0); // true ERROR DE JAVASCRIPT
+console.log(null == undefined); // true
+
+// Sentencia if
+
+if(4 < 5) console.log('If de línea');
+
+if(4 >5){
+    b = 5 + 3;
+}
+
+/*
+TABLA CONVERSIÓN BOOLEANOS
+undefined -> false
+null -> false
+string '' -> false
+NaN -> false
+0 -> false
+
+'0' -> true
+'  ' -> true
+*/
+x = 0;
+if(x){
+    console.log('entró');
+}
+
+if('az'){
+    console.log('entró en la segunda línea');
+}
+
+// Operador ternario
+let edad_tres = 45;
+let resultado = edad_tres > 18 ? 30 : 20;
+console.log(resultado);
+
