@@ -297,5 +297,55 @@ if('az'){
 // Operador ternario
 let edad_tres = 45;
 let resultado = edad_tres > 18 ? 30 : 20;
+
+if(edad_tres > 18){
+    resultado = 30;
+}else if(edad_tres == 0){
+    resultado = 0;
+}else{
+    resultado = 28;
+}
 console.log(resultado);
+
+// Ciclos
+
+let i = 1;
+while(i <= 10){
+    console.log(`El valor de i es: ${i}`);
+    i++;
+}
+
+console.log('*************');
+i = 1;
+do{
+    console.log(`El valor de i es: ${i}`);
+    i++;
+}while(i<=10);
+
+// Ciclo for
+
+console.log('*************');
+
+for(i=0; i <=10; i++){
+    console.log(`El valor de i es ${i}`);
+}
+
+// switch
+
+a = 2 + 2;
+switch(a){
+    case 3:
+        console.log('El resutlado es 3');
+        break;
+    case 4:
+        console.log('El resultado es 4');
+        break;
+    default:
+         console.log('Ninguna de las Anteriores');
+}
+
+
+
+
+
 
